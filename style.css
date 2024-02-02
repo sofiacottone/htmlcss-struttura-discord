@@ -21,7 +21,7 @@
 }
 
 /*-------------------
-    GENERAL
+    DEBUG
 -------------------*/
 .debug * {
     /* border: 1px dashed; */
@@ -31,7 +31,7 @@
     /* border: 2px dashed red; */
 }
 
-.debug .header-box * {
+.debug .header-box>* {
     border: 1px dashed;
 }
 
@@ -47,17 +47,20 @@
     display: flex;
 }
 
+.padding-16 {
+    min-height: 16px;
+}
+
 /*-------------------
     HEADER
 -------------------*/
 header {
     background-color: var(--header-blue);
-    min-height: 50px;
-    display: flex;
 }
 
 .header-box {
     width: 60%;
+    min-height: 40px;
     justify-content: space-between;
     align-items: center;
 }
@@ -80,7 +83,27 @@ header {
     text-align: center;
 }
 
+.header-nav a {
+    text-decoration: none;
+    color: black;
+}
+
 .login-sect {
     width: 25%;
     text-align: right;
+}
+
+/*-------------------
+    HERO
+-------------------*/
+.hero {
+    background-color: var(--hero-blue);
+    min-height: 350px;
+}
+
+.hero-box {
+    background-color: var(--hero-pink);
+    width: 70%;
+    min-height: 290px;
+    margin: 14px auto;
 }
