@@ -20,22 +20,17 @@
 
 /* #endregion  */
 /* #region DEBUG */
-.debug * {
-    /* border: 1px dashed; */
-}
-
-.debug section {
-    /* border: 2px dashed red; */
-}
-
-.debug .header-box>* {
+.debug .header-box>*,
+.hero-box,
+.cols,
+.bottom-footer>* {
     border: 1px dashed;
 }
 
 /* #endregion  */
 /* #region GENERAL */
 body {
-    /* overflow: hidden; */
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -70,11 +65,11 @@ header {
 }
 
 .logo {
-    width: 25%;
+    flex-grow: 1;
 }
 
 .header-nav {
-    width: 50%;
+    flex-grow: 2;
     text-align: center;
 }
 
@@ -84,7 +79,7 @@ header {
 }
 
 .login-sect {
-    width: 25%;
+    flex-grow: 1;
     text-align: right;
 }
 
@@ -120,14 +115,9 @@ section:nth-child(odd) {
     min-height: 340px;
 }
 
-
 /*-------------------
     section columns
 -------------------*/
-.cols {
-    border: 1px dashed;
-}
-
 .col-25 {
     width: 25%;
     border-color: #ffffff;
@@ -173,14 +163,12 @@ footer {
     background-color: #23272A;
     min-height: 370px;
     justify-content: space-around;
-
 }
 
 footer>.section-box {
     width: 70%;
     padding: 15px;
     align-self: center;
-
 }
 
 .f-border {
@@ -200,11 +188,7 @@ footer>.section-box {
 .bottom-footer>* {
     font-size: 10px;
     padding: 2px 4px;
-    /* margin: 0 -15px; */
     background-color: var(--footer-pink);
-    border: 1px dashed;
 }
-
-
 
 /* #endregion  */
