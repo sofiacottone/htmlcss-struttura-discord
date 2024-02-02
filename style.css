@@ -1,6 +1,4 @@
-/*-------------------
-    RESET
--------------------*/
+/* #region RESET */
 :root {
     --header-blue: #ADD8E6;
     --nav-yellow: #DAA520;
@@ -20,9 +18,8 @@
     box-sizing: border-box;
 }
 
-/*-------------------
-    DEBUG
--------------------*/
+/* #endregion  */
+/* #region DEBUG */
 .debug * {
     /* border: 1px dashed; */
 }
@@ -35,11 +32,10 @@
     border: 1px dashed;
 }
 
-/*-------------------
-    GENERAL
--------------------*/
+/* #endregion  */
+/* #region GENERAL */
 body {
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .container {
@@ -55,9 +51,8 @@ body {
     min-height: 16px;
 }
 
-/*-------------------
-    HEADER
--------------------*/
+/* #endregion  */
+/* #region HEADER */
 header {
     background-color: var(--header-blue);
 }
@@ -97,9 +92,8 @@ header {
     text-align: right;
 }
 
-/*-------------------
-    HERO
--------------------*/
+/* #endregion  */
+/* #region HERO */
 .hero {
     background-color: var(--hero-blue);
     min-height: 350px;
@@ -109,15 +103,16 @@ header {
     background-color: var(--hero-pink);
     width: 60%;
     min-height: 290px;
-    margin: 14px auto;
+    align-self: center;
 }
 
-/*-------------------
-    SECTIONS
--------------------*/
+/* #endregion  */
+/* #region SECTIONS */
 section {
     background-color: #ffffff;
     min-height: 370px;
+    padding: 20px;
+    align-items: center;
 }
 
 section:nth-child(odd) {
@@ -127,8 +122,9 @@ section:nth-child(odd) {
 .section-box {
     width: 70%;
     min-height: 340px;
-    margin: 25px auto;
+    margin: 0 auto;
 }
+
 
 /*-------------------
     section columns
@@ -150,3 +146,5 @@ section:nth-child(odd) {
 .bg-pink {
     background-color: var(--box-pink);
 }
+
+/* #endregion  */
